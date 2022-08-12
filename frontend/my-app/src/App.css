@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Urbanist";
+}
+:root {
+  --primary: grey;
+  --primary-color: #daa520;
+  --secondary-color: #b5aa99;
+  --secondary-bg: #ffeecb;
+  --secondary-bg-variant: #fffdf6;
+
+  --font-color-primary: #1a1a1a;
+  --font-color-secondary: #808080;
+  --font-color-positive: #1bd465;
+
+  --transition: all 0.5s ease-in-out;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:5rem;
+}
+
+.custom-card {
+  background: #FFEECB !important;
+}
+
+.card-heading {
+  font-weight: 200 !important;
+  color: #808080;
+}
+
+.card-value {
+  font-weight: 1000 !important;
+  color: #000000 !important;
+}
+
+.page-title {
+  font-weight: 1000 !important;
+  color: #DAA520 !important;
+}

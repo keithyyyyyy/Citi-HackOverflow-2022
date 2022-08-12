@@ -1,0 +1,217 @@
+.NavbarItems {
+    background: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 20px 50px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.navbar-logo {
+    color: var(--primary-color);
+    font-weight: 1000 !important;
+    justify-self: start;
+    margin-left: 0;
+    cursor: pointer;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    margin-bottom: 0 !important;
+    white-space: nowrap;
+}
+
+.logo-image {
+    height: 60px;
+    transform: translate(0%, 10%);
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.account-menu {
+    position: absolute;
+    top: -200px;
+    right: 0;
+    color: white;
+    display: None;
+}
+
+.account-menu.active{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    list-style: none;
+    text-align: center;
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    justify-content: center;
+    transition: all 0.5s ease;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.profile-picture {
+    height: 60px;
+    cursor: pointer;
+}
+
+.nav-links {
+    color: #808080;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 3px;
+}
+
+.nav-links.active{
+    text-decoration: underline;
+    color:var(--primary-color)
+}
+
+.nav-links:hover {
+    background-color: #808080;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.account-links {
+    color: #808080;
+    text-decoration: none;
+    padding-bottom: 5px;
+    margin: 3px;
+    padding-top: 5px;
+}
+
+.account-links.active{
+    text-decoration: underline;
+    color:var(--primary-color);
+}
+
+.account-links:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+    color: var(--primary-color);
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+        position: relative;
+    }
+
+    .logo-image {
+        height: 60px;
+        transform: translate(0%, -35%);
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 550px;
+        position: absolute;
+        top: 90px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background: white;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        background-color: var(--primary-color);
+        border-radius: 0;
+    }
+
+    .navbar-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+        height: 80px;
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times {
+        color: navajowhite;
+        font-size: 2rem;
+    }
+
+    .nav-links-mobile {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem auto;
+        border-radius: 4px;
+        width: 60%;
+        background: var(--primary);
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .nav-links-mobile:hover {
+        background: var(--primary-color);
+        color: aliceblue;
+        transition: 250ms;
+    }
+
+    .profile-picture {
+        display: None;
+    }
+
+    Button {
+        display: None;
+    }
+
+
+}

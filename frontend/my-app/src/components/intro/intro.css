@@ -1,0 +1,29 @@
+.intro {
+  background-color: var(--secondary-bg);
+  width: 100%;
+  padding: 3rem 10rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.intro > img {
+  align-self: center;
+  width: 50%;
+  
+}
+.intro > h2 {
+  color: var(--font-color-primary);
+}
+.intro > small {
+  color: var(--font-color-secondary);
+}
+.intro > .btn {
+  width: 8rem;
+}
+.intro--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
